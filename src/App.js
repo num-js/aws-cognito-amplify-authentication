@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
-import { withAuthenticator } from 'aws-amplify-react';
 
 import SignUp from './SignUp';
 import SignIn from './SignIn';
@@ -28,13 +27,21 @@ class App extends Component {
 
     render() {
 
-        const {userSignedUp } = this.state; 
+        const { userSignedUp } = this.state;
 
         return (
             <>
-                <div>
-                    <button onClick={this.HandleFormToggle}> Toggle </button>
-                    {!userSignedUp ? <SignUp /> : <SignIn /> }
+                <div align="center">
+                    <div>
+                        <br />
+                        <br />
+                        <button onClick={this.HandleFormToggle}>
+                            Toggle Forms
+                        </button>
+                    </div>
+
+                    <br />
+                    {!userSignedUp ? <SignUp /> : <SignIn />}
                 </div>
             </>
         )

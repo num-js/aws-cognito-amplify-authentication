@@ -57,7 +57,7 @@ export default class SignUp extends Component {
         Auth.confirmSignUp(userName, confirmationCode)
             .then((res) => {
                 console.log('Confirmed Sign Up:- ', res)
-                
+
             })
             .catch(err => console.log(err))
     }
@@ -69,11 +69,12 @@ export default class SignUp extends Component {
                 <>
                     <form onSubmit={this.confirmSignUpWithconfirmationCode}>
                         <label>UserName</label>
-                        <input type='text' name="userName" onChange={this.handleChange} />
+                        <input type='text' name="userName" onChange={this.handleChange} /> <br />
 
                         <label>Confirmation Code</label>
-                        <input type='text' name="confirmationCode" onChange={this.handleChange} />
+                        <input type='text' name="confirmationCode" onChange={this.handleChange} /> <br />
 
+                        <br />
                         <button type="submit">Submit</button>
                     </form>
                 </>
@@ -81,38 +82,40 @@ export default class SignUp extends Component {
         } else {
             return (
                 <>
+                    <h3>SignUp</h3>
                     <form onSubmit={this.handleSubmit}>
                         <label>UserName</label>
-                        <input type='text' name="userName" onChange={this.handleChange} />
+                        <input type='text' name="userName" onChange={this.handleChange} /> <br />
 
                         <label>Name</label>
-                        <input type='text' name="name" onChange={this.handleChange} />
+                        <input type='text' name="name" onChange={this.handleChange} /> <br />
 
                         <label>Email</label>
-                        <input type='email' name="email" onChange={this.handleChange} />
+                        <input type='email' name="email" onChange={this.handleChange} /> <br />
 
                         <label>Password</label>
-                        <input type='password' name="password" onChange={this.handleChange} />
+                        <input type='password' name="password" onChange={this.handleChange} /> <br />
 
                         <label>Phone No.</label>
-                        <input type='text' name="phoneNumber" onChange={this.handleChange} />
+                        <input type='text' name="phoneNumber" onChange={this.handleChange} /> <br />
 
+                        <br />
                         <button type="submit">Submit</button>
                     </form>
 
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
 
+                    <h3>Enter Confirmation Code if you are already SignedUp</h3>
                     <form onSubmit={this.confirmSignUpWithconfirmationCode}>
                         <label>UserName</label>
-                        <input type='text' name="userName" onChange={this.handleChange} />
+                        <input type='text' name="userName" onChange={this.handleChange} /> <br />
 
                         <label>Confirmation Code</label>
-                        <input type='text' name="confirmationCode" onChange={this.handleChange} />
+                        <input type='text' name="confirmationCode" onChange={this.handleChange} /> <br />
 
+                        <br />
                         <button type="submit">Submit</button>
                     </form>
 

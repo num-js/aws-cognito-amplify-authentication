@@ -56,13 +56,15 @@ export default class SignIn extends Component {
         } else {
             return (
                 <>
+                    <h3>SignIn</h3>
                     <form onSubmit={this.handleSubmit}>
-                        <label>UserName</label>
-                        <input type='text' name="userName" onChange={this.handleChange} />
+                        <label>UserName : </label>
+                        <input type='text' name="userName" onChange={this.handleChange} /> <br />
 
-                        <label>Password</label>
-                        <input type='password' name="password" onChange={this.handleChange} />
+                        <label>Password : </label>
+                        <input type='password' name="password" onChange={this.handleChange} /> <br />
 
+                        <br />
                         <button type="submit">SignIn</button>
                     </form>
                 </>
