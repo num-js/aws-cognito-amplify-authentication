@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# AWS-Cognito-Amplify Authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `Authentication With React`
 
 ## Available Scripts
 
